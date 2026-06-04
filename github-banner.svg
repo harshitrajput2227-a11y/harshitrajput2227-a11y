@@ -1,1 +1,221 @@
+<svg width="1500" height="500" viewBox="0 0 1500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="45%" style="stop-color:#1f1510"/>
+      <stop offset="100%" style="stop-color:#150e08"/>
+    </linearGradient>
 
+    <linearGradient id="warmLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8863a;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#c8863a;stop-opacity:1"/>
+      <stop offset="80%" style="stop-color:#e8b06a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e8b06a;stop-opacity:0"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f5e6d0"/>
+      <stop offset="60%" style="stop-color:#e8c99a"/>
+      <stop offset="100%" style="stop-color:#c8863a"/>
+    </linearGradient>
+
+    <linearGradient id="statLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8863a;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#c8863a;stop-opacity:0.1"/>
+    </linearGradient>
+
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle texture overlay — horizontal grain lines -->
+  <rect width="1500" height="500" fill="none" stroke="#ffffff" stroke-width="0" opacity="0.02"/>
+
+  <!-- Left warm block accent -->
+  <rect x="0" y="0" width="6" height="500" fill="url(#warmLine)" opacity="0.9"/>
+
+  <!-- Top rule -->
+  <rect x="80" y="72" width="1340" height="1" fill="#c8863a" opacity="0.25"/>
+
+  <!-- Bottom rule -->
+  <rect x="80" y="428" width="1340" height="1" fill="#c8863a" opacity="0.25"/>
+
+  <!-- Decorative corner marks -->
+  <rect x="80" y="72" width="24" height="3" fill="#c8863a" opacity="0.9"/>
+  <rect x="80" y="70" width="3" height="24" fill="#c8863a" opacity="0.9"/>
+
+  <rect x="1396" y="72" width="24" height="3" fill="#c8863a" opacity="0.9"/>
+  <rect x="1417" y="70" width="3" height="24" fill="#c8863a" opacity="0.9"/>
+
+  <rect x="80" y="426" width="24" height="3" fill="#c8863a" opacity="0.9"/>
+  <rect x="80" y="406" width="3" height="24" fill="#c8863a" opacity="0.9"/>
+
+  <rect x="1396" y="426" width="24" height="3" fill="#c8863a" opacity="0.9"/>
+  <rect x="1417" y="406" width="3" height="24" fill="#c8863a" opacity="0.9"/>
+
+  <!-- HARSHIT — main name, bold serif -->
+  <text x="108" y="230"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="130"
+    font-weight="700"
+    fill="url(#nameGrad)"
+    letter-spacing="-3"
+    filter="url(#textGlow)">HARSHIT</text>
+
+  <!-- Thin rule under name -->
+  <rect x="108" y="248" width="560" height="1.5" fill="url(#warmLine)" opacity="0.7"/>
+
+  <!-- Role label -->
+  <text x="108" y="290"
+    font-family="Georgia, serif"
+    font-size="17"
+    fill="#c8863a"
+    letter-spacing="5"
+    opacity="0.9">INDEPENDENT RESEARCHER &amp; BUILDER</text>
+
+  <!-- Tagline -->
+  <text x="108" y="338"
+    font-family="Georgia, serif"
+    font-size="19"
+    font-style="italic"
+    fill="#d4b896"
+    letter-spacing="0.5"
+    opacity="0.85">Builder. Researcher. Thinker. Operating at the intersection</text>
+  <text x="108" y="364"
+    font-family="Georgia, serif"
+    font-size="19"
+    font-style="italic"
+    fill="#d4b896"
+    letter-spacing="0.5"
+    opacity="0.85">of business, data, and AI.</text>
+
+  <!-- Stats section — right aligned -->
+  <!-- Vertical divider before stats -->
+  <rect x="900" y="100" width="1" height="300" fill="#c8863a" opacity="0.15"/>
+
+  <!-- Stat 1 -->
+  <text x="960" y="175"
+    font-family="Georgia, serif"
+    font-size="52"
+    font-weight="700"
+    fill="#e8b06a"
+    opacity="0.95">9</text>
+  <text x="960" y="200"
+    font-family="Georgia, serif"
+    font-size="12"
+    fill="#a07850"
+    letter-spacing="2"
+    opacity="0.8">CAREERS ANALYZED</text>
+
+  <!-- Divider -->
+  <rect x="1040" y="145" width="1" height="70" fill="#c8863a" opacity="0.2"/>
+
+  <!-- Stat 2 -->
+  <text x="1065" y="175"
+    font-family="Georgia, serif"
+    font-size="52"
+    font-weight="700"
+    fill="#e8b06a"
+    opacity="0.95">2</text>
+  <text x="1065" y="200"
+    font-family="Georgia, serif"
+    font-size="12"
+    fill="#a07850"
+    letter-spacing="2"
+    opacity="0.8">FIELD CASE STUDIES</text>
+
+  <!-- Divider -->
+  <rect x="1210" y="145" width="1" height="70" fill="#c8863a" opacity="0.2"/>
+
+  <!-- Stat 3 -->
+  <text x="1230" y="175"
+    font-family="Georgia, serif"
+    font-size="52"
+    font-weight="700"
+    fill="#e8b06a"
+    opacity="0.95">1</text>
+  <text x="1230" y="200"
+    font-family="Georgia, serif"
+    font-size="12"
+    fill="#a07850"
+    letter-spacing="2"
+    opacity="0.8">WORKING PROTOTYPE</text>
+
+  <!-- Divider -->
+  <rect x="1340" y="145" width="1" height="70" fill="#c8863a" opacity="0.2"/>
+
+  <!-- Stat 4 -->
+  <text x="1360" y="175"
+    font-family="Georgia, serif"
+    font-size="52"
+    font-weight="700"
+    fill="#e8b06a"
+    opacity="0.95">1</text>
+  <text x="1360" y="200"
+    font-family="Georgia, serif"
+    font-size="12"
+    fill="#a07850"
+    letter-spacing="2"
+    opacity="0.8">DOI PUBLISHED</text>
+
+  <!-- Thin rule between stats and badges -->
+  <rect x="930" y="230" width="490" height="1" fill="#c8863a" opacity="0.15"/>
+
+  <!-- Research title -->
+  <text x="960" y="272"
+    font-family="Georgia, serif"
+    font-size="13"
+    fill="#c8863a"
+    letter-spacing="1"
+    opacity="0.7">PUBLISHED RESEARCH</text>
+
+  <text x="960" y="298"
+    font-family="Georgia, serif"
+    font-size="14"
+    fill="#d4b896"
+    opacity="0.85">AI Career Resilience in India</text>
+  <text x="960" y="318"
+    font-family="Georgia, serif"
+    font-size="14"
+    fill="#d4b896"
+    opacity="0.85">Toward 2030</text>
+
+  <!-- Badge row -->
+  <rect x="960" y="345" width="110" height="26" rx="2"
+    fill="none" stroke="#c8863a" stroke-width="1" opacity="0.5"/>
+  <text x="1015" y="362"
+    font-family="Georgia, serif"
+    font-size="11"
+    fill="#c8863a"
+    text-anchor="middle"
+    letter-spacing="1.5"
+    opacity="0.9">ZENODO DOI</text>
+
+  <rect x="1084" y="345" width="145" height="26" rx="2"
+    fill="none" stroke="#c8863a" stroke-width="1" opacity="0.5"/>
+  <text x="1156" y="362"
+    font-family="Georgia, serif"
+    font-size="11"
+    fill="#c8863a"
+    text-anchor="middle"
+    letter-spacing="1.5"
+    opacity="0.9">YOUTH KI AWAAZ</text>
+
+  <!-- India · 2026 bottom right -->
+  <text x="1420" y="455"
+    font-family="Georgia, serif"
+    font-size="11"
+    fill="#c8863a"
+    text-anchor="middle"
+    letter-spacing="3"
+    opacity="0.4">INDIA · 2026</text>
+
+</svg>
